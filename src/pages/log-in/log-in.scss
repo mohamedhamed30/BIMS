@@ -1,0 +1,32 @@
+page-log-in {
+  .scroll-content {
+    background-color: #445ca4;
+  }
+  .fieldStyle{
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px
+  }
+  ion-item > ion-icon{
+    color: #445ca4
+  }
+  .button{
+    background-color: #fff;
+    color: #445ca4;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+    padding: 25px;
+  }
+  .item-md ::placeholder {
+    color: #445ca4;
+    opacity: 0.5;
+  }
+  .landscapeButton{
+margin-top: 5%;
+  }
+
+  .scroll-content {
+    overflow-y: hidden;
+}
+}

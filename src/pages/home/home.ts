@@ -1,0 +1,75 @@
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { LogInPage } from '../log-in/log-in';
+import { AboutUsPage } from '../about-us/about-us';
+import { BimsEventsPage } from '../bims-events/bims-events';
+import { BimsTourPage } from '../bims-tour/bims-tour';
+import { ContactUsPage } from '../contact-us/contact-us';
+import { FacilitiesPage } from '../facilities/facilities';
+import { PhotoGalleryPage } from '../photo-gallery/photo-gallery';
+import { PrPage } from '../pr/pr';
+import { ProfilePage } from '../profile/profile';
+import { VideoGalleryPage } from '../video-gallery/video-gallery';
+import { AdmissionInformationPage } from '../admission-information/admission-information';
+
+
+@Component({
+
+  selector: 'page-home',
+  templateUrl: 'home.html'
+})
+export class HomePage {
+
+  constructor(public navCtrl: NavController) {
+
+  }
+  logInPage() {
+    this.navCtrl.push(LogInPage);
+  }
+
+
+  OpenAboutUs() {
+    this.navCtrl.push(AboutUsPage)
+  }
+
+  OpenBIMSEvents() {
+    this.navCtrl.push(BimsEventsPage)
+  }
+
+  OpenAdmissionInformation() {
+    this.navCtrl.push(AdmissionInformationPage)
+  }
+
+  OpenFacilities() {
+    this.navCtrl.push(FacilitiesPage)
+  }
+
+  OpenPhotosGallary() {
+    this.navCtrl.push(PhotoGalleryPage)
+  }
+
+  OpenVideosGallary() {
+    this.navCtrl.push(VideoGalleryPage)
+  }
+
+  OpenBIMSTour() {
+    this.navCtrl.push(BimsTourPage)
+  }
+
+  OpenContactUs() {
+    this.navCtrl.push(ContactUsPage)
+  }
+
+  OpenPR() {
+    this.navCtrl.push(PrPage)
+  }
+  OpenProfile(){
+    this.navCtrl.push(ProfilePage)
+  }
+  
+  OpenLogInPage(){
+    this.navCtrl.push(LogInPage)
+  }
+  
+}
+

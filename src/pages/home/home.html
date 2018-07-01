@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <button ion-button menuToggle>
+            <ion-icon class="icons-header" name="menu"></ion-icon>
+          </button>
+        </ion-col>
+
+        <ion-col col-4 showWhen="portrait">
+          <ion-title>Home</ion-title>
+        </ion-col>
+
+        <ion-col col-4 showWhen="landscape">
+          <ion-row>
+
+            <ion-col col-6>
+              <img src="assets/imgs/BIMSe Logo 100px.png" style="position: absolute;top: -22px;height: 90px;">
+            </ion-col>
+            <ion-col col-6>
+              <ion-title>Home</ion-title>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+        <ion-col col-2>
+          <button ion-button color="light" clear icon-only>
+            <ion-icon class="icons-header" name="ios-notifications">
+              <ion-badge>9+</ion-badge>
+            </ion-icon>
+          </button>
+        </ion-col>
+
+        <ion-col col-2>
+          <button ion-button color="light" clear icon-only (click)="OpenProfile()">
+            <ion-icon class="icons-header" name="md-person"></ion-icon>
+          </button>
+        </ion-col>
+
+        <ion-col col-2>
+          <button ion-button color="light" clear icon-only (click)="OpenLogInPage()">
+            <ion-icon class="icons-header" name="ios-log-in" style="font-weight: bold;"></ion-icon>
+          </button>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="topPart" showWhen="portrait">
+    <img src="assets/imgs/blueShape22.png">
+  </div>
+
+  <div  showWhen="landscape" style="margin-bottom: 15%">
+      
+    </div>
+
+  <ion-grid style="margin-top: -8%" >
+      <ion-row>
+        <ion-col col-3 style="text-align: center" (click)="OpenAboutUs()">
+          <ion-icon class="icons-size" name="md-school" style="background-color: #ffdc64;border: 1px solid #ffdc64"></ion-icon>
+          <p>About Us</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenBIMSEvents()">
+          <ion-icon class="icons-size" name="md-clock" style="background-color: #54b031;border: 1px solid #54b031"></ion-icon>
+          <p>BIMS Events</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenAdmissionInformation()">
+          <ion-icon class="icons-size" name="md-information-circle" style="background-color: #3f56a2;border: 1px solid #3f56a2"></ion-icon>
+          <p>Admission details</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenFacilities()">
+          <ion-icon class="icons-size" name="md-trending-up" style="background-color: #754417;border: 1px solid #754417"></ion-icon>
+          <p>Facilities</p>
+        </ion-col>
+      </ion-row>
+      <!-- ************************************************************** -->
+      <ion-row>
+        <ion-col col-3 style="text-align:center" style="text-align: center" (click)="OpenPhotosGallary()">
+          <ion-icon class="icons-size" name="md-images" style="background-color: #e86d6e;border: 1px solid #e86d6e"></ion-icon>
+          <p>Photos Gallary</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenVideosGallary()">
+          <ion-icon class="icons-size" name="logo-youtube" style="background-color: #d21a1a;border: 1px solid #d21a1a" style="background-color: #d21a1a;border: 1px solid #d21a1a"></ion-icon>
+          <p>Videos Gallary</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenContactUs()">
+          <ion-icon class="icons-size" name="md-call" style="background-color: #83bbae;border: 1px solid #83bbae"></ion-icon>
+          <p>Contact Us</p>
+        </ion-col>
+        <ion-col col-3 style="text-align:center" (click)="OpenPR()">
+          <ion-icon class="icons-size" name="md-mail" style="background-color: #8da4af;border: 1px solid #8da4af"></ion-icon>
+          <p>PR</p>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+</ion-content>

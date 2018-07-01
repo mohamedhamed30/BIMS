@@ -1,0 +1,63 @@
+page-home {
+  .topPart {
+    width: 100%;
+    min-height: 50%;
+  }
+  .topPart img {
+    
+    max-width: 110%;
+    border: 0;
+    min-width: 113%;
+    max-height: 50%;
+    min-height: 50%;
+    position: relative;
+    top: -20px;
+    left: -20px;
+
+  }
+  .topPartlandscape img{
+    max-width: 110%;
+    border: 0;
+    min-width: 113%;
+    max-height: 50%;
+    min-height: 50%;
+    position: relative;
+    left: -40px;
+
+
+  }
+
+  .icons-size {
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid #445ca5;
+    border-radius: 0px 15px;
+    padding: 5px;
+    background-color: #445ca5;
+    color: #fff;
+  }
+  p {
+    color: #445ca5;
+    font-weight: bold;
+  }
+  .icons-header {
+    font-size: 30px;
+    background-color: #445ca5;
+    color: #fff;
+  }
+  .toolbar-title-md {
+    padding: 5px 12px;
+  }
+  .badge-md {
+    background-color: #d2292a;
+    position: relative;
+    top: -10px;
+    border: 1px solid #d32a2a;
+    border-radius: 50%;
+    right: 15px;
+    padding: 3px;
+  }
+//   .scroll-content {
+//     overflow-y: hidden;
+// }
+}

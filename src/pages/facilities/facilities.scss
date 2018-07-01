@@ -1,0 +1,42 @@
+page-facilities {
+  .card-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+      width: 97%;
+      top: -7px;
+      left: -9px;
+      border-radius: 0px 40px 0px 0px;
+      margin-bottom: 50px;
+    }
+    .card-title {
+      font-size: 20px;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgb(68, 92, 165);
+    }
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    ion-card img {
+      width: 100%
+    }
+    h1 {
+      margin: 10px;
+      color: #fcfeff;
+      font-weight: bold;
+      text-shadow: 1px 1px #445ca5
+    }
+    p {
+      color: #445ca5;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}

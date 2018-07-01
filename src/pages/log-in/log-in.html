@@ -1,0 +1,52 @@
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="login-content">
+
+    <!-- Logo  -->
+    <div padding-horizontal text-center class="animated fadeInDown" showWhen="portrait">
+      <img src="assets/imgs/BIMSe Logo with name.png">
+
+    </div>
+
+    <div padding-horizontal text-center class="animated fadeInDown" showWhen="landscape" style="height: 25%;">
+      <img src="assets/imgs/BIMSe Logo with name.png" style="height: 100px;">
+
+    </div>
+
+    <!-- Login form -->
+    <form class="list-form">
+      <!--  -->
+      <ion-list>
+
+        <ion-item class="fieldStyle">
+          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+
+          <ion-input type="email" placeholder="Username"></ion-input>
+        </ion-item>
+
+        <ion-item class="fieldStyle">
+          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <!--  -->
+    </form>
+
+
+    <div>
+      <button ion-button icon-start block tappable round (click)="signIn()" showWhen="portrait">
+        <ion-icon name="ios-log-in"></ion-icon>
+        SIGN IN
+      </button>
+
+      <button ion-button icon-start block tappable round (click)="signIn()" showWhen="landscape" class="landscapeButton">
+        <ion-icon name="ios-log-in"></ion-icon>
+        SIGN IN
+      </button>
+    </div>
+
+  </div>
+</ion-content>
