@@ -19,15 +19,15 @@
       <ion-list>
 
         <ion-item class="fieldStyle">
-          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+          <ion-icon  name="mail" item-start class="text-primary"></ion-icon>
 
-          <ion-input type="email" placeholder="Username"></ion-input>
+          <ion-input  [(ngModel)]="userNAme" name="userNAme"  type="text-primary" placeholder="Username"></ion-input>
         </ion-item>
 
         <ion-item class="fieldStyle">
           <ion-icon name="lock" item-start class="text-primary"></ion-icon>
 
-          <ion-input type="password" placeholder="Password"></ion-input>
+          <ion-input   [(ngModel)]="pass" name="pass" type="password" placeholder="Password"></ion-input>
         </ion-item>
 
       </ion-list>

@@ -1,7 +1,9 @@
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-
+import {Http,HttpModule} from "@angular/http";
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutUsPage } from '../pages/about-us/about-us';
@@ -17,6 +19,12 @@ import { VideoGalleryPage } from '../pages/video-gallery/video-gallery';
 import { AdmissionInformationPage } from '../pages/admission-information/admission-information';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { FCM } from '@ionic-native/fcm';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { DataProvider } from '../Providers/dataProvider';
+import { Common } from '../Providers/common';
+
+
 
 @NgModule({
   declarations: [
@@ -32,12 +40,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PrPage,
     ProfilePage,
     VideoGalleryPage,
-    AdmissionInformationPage
+    AdmissionInformationPage,
+    
 
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,6 +68,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AdmissionInformationPage
   ],
   providers: [
+    FCM,
+   NativeStorage , 
+    DataProvider,
+Common,
     StatusBar,
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler }

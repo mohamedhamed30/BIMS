@@ -29,7 +29,7 @@
   <ion-avatar item-start style="margin-top: 10%">
     <img src="assets/imgs/person.jpg" class="center">
   </ion-avatar>
-  <h1 class="name">Mohamed Hamed</h1>
+  <h1 class="name"> {{userName}} </h1>
 
   <ion-grid style="font-size: 40px">
     <ion-row class="parentData" style="margin-top: 30%;">
@@ -38,7 +38,7 @@
       </ion-col>
 
       <ion-col col-9 style="font-size: 18px">
-        <a>mohamedhamed@gmail.com</a>
+          {{Email}}
       </ion-col>
     </ion-row>
     <ion-row class="parentData" style="border-top: none ; color: green ; font-weight: bold">
@@ -47,7 +47,7 @@
       </ion-col>
 
       <ion-col col-9 style="font-size: 18px">
-        <strong>0100 283 4236</strong>
+        <strong> {{smsMob}}</strong>
       </ion-col>
     </ion-row>
     <ion-row class="parentData" style="border-top: none">
@@ -56,13 +56,13 @@
       </ion-col>
 
       <ion-col col-9 style="font-size: 18px">
-        0123 456 7890
+          {{mob}} 
       </ion-col>
     </ion-row>
 
   </ion-grid>
 
-  <button ion-button full style="margin-top: -2%">Edit</button>
+
 
 
 

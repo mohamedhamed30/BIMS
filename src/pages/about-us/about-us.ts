@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FCM } from '@ionic-native/fcm';
 
 /**
  * Generated class for the AboutUsPage page.
@@ -15,11 +16,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AboutUsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private fcm: FCM) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AboutUsPage');
+    this.fcm.getToken().then(token => {
+    //  backend.registerToken(token);
+    });
+    
+    this.fcm.onNotification().subscribe(data => {
+      if(data.wasTapped){
+        alert("Received in background");
+      } else {
+        alert("Received in foreground");
+      };
+    });
+    
+    this.fcm.onTokenRefresh().subscribe(token => {
+     // backend.registerToken(token);
+    });
+    
   }
 
 }
